@@ -1,0 +1,236 @@
+// app global css in SCSS form
+
+.body--light {
+  .text-white {
+    color: whitesmoke;
+  }
+  .bg-dark {
+    color: $dark;
+  }
+  .bg-positive {
+    color: $positive;
+  }
+  .bg-accent {
+    color: $accent;
+  }
+}
+
+// .body--dark {
+//   .text-white {
+//     color: rgb(29, 3, 51) !important;
+//   }
+//   .bg-dark {
+//     background-color: rgb(101, 140, 143) !important;
+//   }
+//   .bg-positive {
+//     background-color: whitesmoke !important;
+//   }
+//   .bg-accent {
+//     background-color: rgb(128, 128, 128, 0.9) !important;
+//   }
+// }
+
+@import url('https://use.typekit.net/vpk0mxp.css');
+
+.text-help {
+  color: $help;
+}
+
+.text-comment {
+  color: $comment;
+}
+.text-white {
+  color: whitesmoke !important;
+}
+#q-app {
+  display: flex !important;
+  width: 100% !important;
+  background-color: #1d1d1d !important;
+
+  font-family: droid-sans-mono, monospace;
+  // font-weight: 400;
+  font-style: normal;
+}
+
+.q-layout {
+  margin-left: 70px !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.q-header {
+  // position: absolute !important;
+  // width: 100% !important;
+  // left: 0 !important;
+}
+
+.q-drawer {
+  position: fixed;
+  left: 70px;
+}
+
+.q-drawer-container .fullscreen {
+  // position: static;
+}
+@media screen and (max-width: 500px) {
+  // .q-drawer {
+  //   position: absolute;
+  //   left: 0;
+  // }
+}
+
+.q-footer {
+  left: 0 !important;
+  z-index: 2005;
+  // height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.q-tree {
+  color: whitesmoke !important;
+}
+
+.q-tree__arrow,
+.q-tree__spinner {
+  font-size: 1.4rem !important;
+  font-weight: 200 !important;
+}
+
+p {
+  margin: 0;
+}
+
+.tab_header .q-tab__content {
+  width: 100%;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+  flex-wrap: initial !important;
+  gap: 10px;
+}
+
+.tab_header {
+  background-color: rgb(255, 255, 255, 0.01);
+  border-left: 1px solid black;
+  text-transform: none !important;
+}
+
+.tab_header .q-focus-helper {
+  display: none !important;
+}
+
+.header_scrollable {
+  // flex-wrap: nowrap !important;
+  // flex-wrap: initial !important ;
+  // display: flex;
+}
+
+.header_scrollable .q-tabs__content {
+  padding-right: 15% !important;
+}
+
+.main_page .q-tab-panels {
+  margin-top: 52px !important;
+}
+.q-tree__node {
+  padding: 0;
+}
+
+.About_md .q-tab__content .q-tab__icon {
+  color: #00bcd4;
+}
+
+.Skills_jsx .q-tab__content .q-tab__icon {
+  color: #2196f3;
+}
+
+.Experience_vue .q-tab__content .q-tab__icon {
+  color: #4caf50;
+}
+
+.Projects_png .q-tab__content .q-tab__icon {
+  color: #9c27b0;
+}
+
+.Certifications_ts .q-tab__content .q-tab__icon {
+  color: #00bcd4;
+}
+
+.Contact_json .q-tab__content .q-tab__icon {
+  color: #ffeb3b;
+}
+
+.CV_pdf .q-tab__content .q-tab__icon {
+  color: #f44336;
+}
+
+// Mobile sidebar menu
+.q-expansion-item__container .q-item {
+  padding: 0;
+}
+.q-expansion-item__content .q-list .q-item {
+  padding-left: 30px;
+}
+.q-item__section--side {
+  padding-right: 8px;
+}
+.q-item__section--avatar {
+  min-width: 0;
+}
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 50px !important;
+  }
+  .q-drawer {
+    left: 50px;
+  }
+  .q-layout {
+    margin-left: 50px !important;
+  }
+  .q-tabs--dense .q-tab--full {
+    min-height: 35px;
+  }
+
+  .main_page .q-tab-panels {
+    margin-top: 40px !important;
+  }
+
+  .main_page .q-tab__icon {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+
+  .main_page .q-tab-panel {
+    padding: 5px 5px;
+  }
+}
+
+/// Github section //////
+
+.text-git-text {
+  color: #c9d1d9;
+}
+.github-section {
+  margin-left: 0 !important;
+}
+
+.github-section .q-drawer {
+  left: 0 !important;
+}
+
+.github-section .q-field--dense .q-field__control,
+.q-field--dense .q-field__marginal {
+  // color: white !important;
+  height: 30px !important;
+  border-radius: 8px;
+}
+
+.q-field--dense .q-field__control,
+.q-field--dense input::placeholder {
+  color: white !important;
+}
+
+.github-section .q-tab-panels {
+  margin-top: 5px !important;
+}
