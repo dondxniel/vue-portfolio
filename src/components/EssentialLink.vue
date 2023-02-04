@@ -20,43 +20,12 @@
             :color="prop.node.iconColor"
             class="q-mr-sm"
           />
-          <div class="text-weight-bold text-white">{{ prop.node.label }}</div>
+          <div class="text-weight-bold text-white">
+            {{ prop.node.label }}
+          </div>
         </div>
       </template>
-      <!-- <template v-slot:default-body="prop">
-        <span class="text-weight-bold">{{ prop.node.label }}</span>
-        <span class="text-weight-light text-black"
-          >This is some default content.</span
-        >
-      </template> -->
     </q-tree>
-    <!-- <q-list v-for="(item, index) in simple" :key="index">
-      <q-expansion-item
-        expand-separator
-        expand-icon="chevron_right"
-        expanded-icon="expand_more"
-        switch-toggle-side
-        class="text-bold"
-        :label="item.label"
-        default-opened
-      >
-        <q-list dense>
-          <q-item
-            clickable
-            @click="add(items.label)"
-            v-ripple
-            v-for="(items, i) in item.children"
-            :key="i"
-          >
-            <q-item-section avatar>
-              <q-icon :color="items.iconColor" :name="items.icon" />
-            </q-item-section>
-
-            <q-item-section> {{ items.label }}</q-item-section>
-          </q-item>
-        </q-list>
-      </q-expansion-item>
-    </q-list> -->
   </div>
 </template>
 
@@ -65,12 +34,6 @@ import { ref } from 'vue';
 import { useTabs } from '../stores/tabs';
 
 export default {
-  // props: ['toggleLeftDrawer'],
-  // props = {
-  //  toggleLeftDrawer:{
-  //   type: function
-  //  }
-  // },
   props: {
     toggleLeftDrawer: { type: Function },
   },
@@ -112,6 +75,11 @@ export default {
               iconColor: 'purple',
             },
             {
+              label: 'MobileProjects.jpg',
+              icon: 'mdi-image-multiple',
+              iconColor: 'yellow',
+            },
+            {
               label: 'Certifications.ts',
               icon: 'mdi-language-typescript',
               iconColor: 'blue-6',
@@ -121,11 +89,6 @@ export default {
               icon: 'mdi-code-braces',
               iconColor: 'yellow',
             },
-            // {
-            //   label: 'CV.pdf',
-            //   icon: 'mdi-file-pdf-box',
-            //   iconColor: 'red',
-            // },
           ],
         },
       ],

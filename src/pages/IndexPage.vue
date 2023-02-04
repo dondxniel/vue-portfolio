@@ -48,6 +48,8 @@
             ? `mdi-language-typescript`
             : item === 'CV.pdf'
             ? `mdi-file-pdf-box`
+            : item === 'MobileProjects.jpg'
+            ? `mdi-image-multiple`
             : `mdi-code-braces`
         "
         :class="`tab_header ${item.replace('.', '_')}`"
@@ -77,6 +79,7 @@
         <certification-page v-if="item === `Certifications.ts`" />
         <contact-page v-if="item === `Contact.json`" />
         <projects-page v-if="item === `Projects.png`" />
+        <mobile-projects-page v-if="item === `MobileProjects.jpg`" />
         <c-vpage v-if="item === `CV.pdf`" />
       </q-tab-panel>
     </q-tab-panels>
@@ -93,6 +96,7 @@ import { defineComponent, ref } from 'vue';
 import { useTabs } from '../stores/tabs';
 import { useQuasar } from 'quasar';
 import ProjectsPage from 'src/components/pages/ProjectsPage.vue';
+import MobileProjectsPage from 'src/components/pages/MobileProjectsPage.vue';
 import CVpage from 'src/components/pages/CVpage.vue';
 
 export default defineComponent({
@@ -105,6 +109,7 @@ export default defineComponent({
     CertificationPage,
     ContactPage,
     ProjectsPage,
+    MobileProjectsPage,
     CVpage,
   },
   data() {
