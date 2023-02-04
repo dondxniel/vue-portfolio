@@ -41,7 +41,7 @@
         <p class="description">
           {{ project.description }}
         </p>
-        <div class="actions">
+        <!-- <div class="actions">
           <q-btn
             v-show="project.github"
             icon="mdi-github"
@@ -73,7 +73,7 @@
             rounded
             label="Progress"
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -114,26 +114,6 @@ export default {
         },
 
         {
-          image: 'ppfn/ppfn.png',
-          carousel: ['ppfn/ppfn.png', 'ppfn/ppfn1.png', 'ppfn/ppfn2.png'],
-          name: 'Planned Parenthood Federation of Nigeria',
-          description:
-            'Planned Parenthood Federation of Nigeria mobile app to link patients with patients for consultation and diagnosis.',
-          tools: [
-            {
-              name: 'Typescript',
-              color: '76, 175, 80',
-            },
-            {
-              name: 'ReactNative',
-              color: '0, 123, 205',
-            },
-          ],
-          github: '',
-          live_link: 'https://dneleade.store',
-        },
-
-        {
           image: 'smartlight/smartlight4.png',
           carousel: [
             'smartlight/smartlight.png',
@@ -162,6 +142,26 @@ export default {
           ],
           github: '',
           live_link: 'https://vue-ecomm.netlify.app/',
+        },
+
+        {
+          image: 'ppfn/ppfn.png',
+          carousel: ['ppfn/ppfn.png', 'ppfn/ppfn1.png', 'ppfn/ppfn2.png'],
+          name: 'Planned Parenthood Federation of Nigeria',
+          description:
+            'Planned Parenthood Federation of Nigeria mobile app to link patients with patients for consultation and diagnosis.',
+          tools: [
+            {
+              name: 'Typescript',
+              color: '76, 175, 80',
+            },
+            {
+              name: 'ReactNative',
+              color: '0, 123, 205',
+            },
+          ],
+          github: '',
+          live_link: 'https://dneleade.store',
         },
       ],
     };
